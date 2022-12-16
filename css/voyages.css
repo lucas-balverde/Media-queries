@@ -266,3 +266,41 @@ ul {
 ol {
   padding-left: 3%;
 }
+
+@media all and (max-device-width: 375px) {
+
+   /* -------------header--------------- */
+   .menu li a {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .submenu1, .submenu2 {
+    width: 100px;
+  }
+
+/* ----------------main-------------------- */
+
+#index main img {
+  width: 100%;
+  padding-left: 0px;
+}
+
+/* ----------------footer------------------ */
+
+  footer, .socials {
+    flex-direction: column;
+    height: auto;
+  }
+
+  footer section:first-child {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2fr 1fr 3fr;
+  }
+
+  footer section:first-child div {
+    grid-column: 1/7;
+    grid-row-start: 3;
+  }
+
+}
